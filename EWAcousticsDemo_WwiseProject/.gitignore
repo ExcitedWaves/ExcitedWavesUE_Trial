@@ -1,0 +1,10 @@
+# Wwise project — cache/local only. Originals/ and GeneratedSoundBanks/ are tracked (clone-and-play).
+
+.backup*
+.cache*
+*.akd
+*.prof
+*.validationcache
+*.wsettings
+AkWwiseProjectData.asset
+IncrementalSoundBankData.xml

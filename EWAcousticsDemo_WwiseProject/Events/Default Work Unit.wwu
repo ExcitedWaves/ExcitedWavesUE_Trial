@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{94307443-8FF0-4749-82AD-3C9357FC249C}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{94307443-8FF0-4749-82AD-3C9357FC249C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Speech" ID="{838324F9-F358-4A3B-8738-FF368168B315}">
+					<ChildrenList>
+						<Action Name="" ID="{3CFD373E-FD99-4FCA-812F-91D01EB359B2}" ShortID="499390857">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ReferenceVoice" ID="{1A21BC05-49DB-42B2-A83C-C1DDB4BA5C63}" WorkUnitID="{A4531559-C15C-43E0-8999-4AC2503364F8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footsteps" ID="{62B74033-EDA4-4E3F-95DD-17CD7603FFF6}">
+					<ChildrenList>
+						<Action Name="" ID="{4FEBD46F-5ADA-4D99-AA21-679EA1931DDC}" ShortID="70017813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{1D906EB7-DB3E-4355-B722-3CA215664E7D}" WorkUnitID="{A4531559-C15C-43E0-8999-4AC2503364F8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Grenade_Impact" ID="{62600130-9E0E-46AF-9D15-071949E6AD89}">
+					<ChildrenList>
+						<Action Name="" ID="{2DF73EB3-16D4-4597-B318-FD9EADADC6D5}" ShortID="443761799">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grenade_Impact" ID="{01024E81-957F-4ADF-9547-5C61C0123CB4}" WorkUnitID="{A4531559-C15C-43E0-8999-4AC2503364F8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Gunshot_Grenade" ID="{5EB03881-DC3F-4559-A973-FCE21253DFE4}">
+					<ChildrenList>
+						<Action Name="" ID="{5AD32467-995A-42FB-ACA7-523217DB2856}" ShortID="382688776">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gunshot_Grenade" ID="{AEDCD0E8-0412-4BDE-A473-0FDD21C83E34}" WorkUnitID="{A4531559-C15C-43E0-8999-4AC2503364F8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music2" ID="{1D3D7F5E-49C8-42CE-9720-68FD7AB571BA}">
+					<ChildrenList>
+						<Action Name="" ID="{E3EFEDFC-008E-48F9-8824-692EFCADAF99}" ShortID="496427875">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_2" ID="{3FAEB214-C1CC-44CB-89FF-6482656DEE39}" WorkUnitID="{A4531559-C15C-43E0-8999-4AC2503364F8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music" ID="{408335A6-5582-44DA-8F99-EC26BFCE8736}">
+					<ChildrenList>
+						<Action Name="" ID="{6F6F34BE-1C72-4A1C-A1D9-25FB2B14FB09}" ShortID="39600118">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{4AB316E6-ACF6-49A7-8543-C22899078337}" WorkUnitID="{A4531559-C15C-43E0-8999-4AC2503364F8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

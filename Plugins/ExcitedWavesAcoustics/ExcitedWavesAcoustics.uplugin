@@ -1,0 +1,50 @@
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "1.0",
+    "FriendlyName": "Excited Waves Acoustics (Trial)",
+    "Description": "Environmental acoustics detection system for Unreal Engine — Trial (editor only)",
+    "Category": "Audio",
+    "CreatedBy": "Excited Waves",
+    "CreatedByURL": "",
+    "DocsURL": "",
+    "MarketplaceURL": "",
+    "SupportURL": "",
+    "CanContainContent": true,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": false,
+    "Installed": true,
+    "Modules": [
+        {
+            "Name": "ExcitedWavesAcousticsSDK",
+            "Type": "Runtime",
+            "LoadingPhase": "PreDefault"
+        },
+        {
+            "Name": "ExcitedWavesAcoustics",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "AdditionalDependencies": [
+                "Engine",
+                "ExcitedWavesAcousticsSDK"
+            ]
+        },
+        {
+            "Name": "ExcitedWavesAcousticsEditor",
+            "Type": "Editor",
+            "LoadingPhase": "PostEngineInit",
+            "AdditionalDependencies": [
+                "ExcitedWavesAcoustics"
+            ]
+        },
+        {
+            "Name": "ExcitedWavesAcousticsBenchmark",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "AdditionalDependencies": [
+                "Engine",
+                "ExcitedWavesAcoustics"
+            ]
+        }
+    ]
+}

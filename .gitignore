@@ -1,0 +1,112 @@
+# =============================================================================
+# EWAcousticsTrialDev — clone-and-play (GitHub, no LFS)
+# Ignore only dev/build artifacts. Plugins/Binaries, Content, Wwise banks = tracked.
+# =============================================================================
+
+# --- IDE & editors ---
+.vs/
+.vscode/
+.idea/
+.cursor/
+*.user
+*.suo
+*.sln.docstates
+*.DotSettings.user
+*.uproject.DotSettings.user
+*.workspace
+*.sublime-project
+*.sublime-workspace
+
+# --- UE build / cache (project root only) ---
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/Build/
+
+# --- Plugin cache (Binaries are tracked) ---
+Plugins/*/Intermediate/
+Plugins/*/Build/
+
+# --- Debug symbols (not needed for runtime) ---
+*.pdb
+
+# --- Profiling data ---
+*.prof
+
+# --- User-specific ---
+*.wsettings
+*.validationcache
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/EditorPerProjectUserSettings.ini
+
+# --- Wwise project cache & profiling ---
+EWAcousticsDemo_WwiseProject/.cache*/
+EWAcousticsDemo_WwiseProject/.backup*
+EWAcousticsDemo_WwiseProject/*.akd
+EWAcousticsDemo_WwiseProject/AkWwiseProjectData.asset
+EWAcousticsDemo_WwiseProject/IncrementalSoundBankData.xml
+EWAcousticsDemo_WwiseProject/ProfilingSessions/
+
+# --- Wwise / third-party: exclude non-Win64 and non-essential ---
+Plugins/Wwise/Binaries/Mac/
+Plugins/Wwise/Binaries/Linux/
+Plugins/WwiseSoundEngine/Binaries/Mac/
+Plugins/WwiseSoundEngine/Binaries/Linux/
+Plugins/WwiseSoundEngine/ThirdParty/WinGC*/
+Plugins/Wwise/*.chm
+
+# --- Wwise ThirdParty: keep only Profile + Release (saves ~1.2 GB) ---
+Plugins/WwiseSoundEngine/ThirdParty/x64_vc170/Debug/
+Plugins/WwiseSoundEngine/ThirdParty/x64_vc170/Debug(StaticCRT)/
+Plugins/WwiseSoundEngine/ThirdParty/x64_vc170/Profile(StaticCRT)/
+Plugins/WwiseSoundEngine/ThirdParty/x64_vc170/Release(StaticCRT)/
+
+# --- Packaging output ---
+WindowsNoEditor/
+LinuxNoEditor/
+MacNoEditor/
+
+# --- UE / VS DB ---
+*.VC.db
+*.VC.VC.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db-*
+
+# --- Marketplace ---
+*.upluginmanifest
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# --- Crash / local ---
+CrashReportClient/
+
+# --- Version control (other) ---
+.p4config
+.p4ignore
+.plastic/
+
+# --- Optional / dev ---
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class

@@ -1,0 +1,90 @@
+Event	ID	Name			Wwise Object Path	Notes
+	836663353	Play_Grenade_Impact			\Default Work Unit\Play_Grenade_Impact	
+	1436535523	Play_Gunshot_Grenade			\Default Work Unit\Play_Gunshot_Grenade	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+	4122783924	Play_Speech			\Default Work Unit\Play_Speech	
+	4237703231	Play_Music2			\Default Work Unit\Play_Music2	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3072116243	GroundMaterial			\Default Work Unit\GroundMaterial	
+
+Switch	ID	Name	Switch Group			Notes
+	803837735	Sand	GroundMaterial			
+	841620460	Concrete	GroundMaterial			
+	2473969246	Metal	GroundMaterial			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3547995299	EmitterVolume			\Default Work Unit\EmitterVolume	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	523356876	01_Neutral			\Default Work Unit\Master Audio Bus\Mix\Reverbs\01_Neutral	
+	748749717	02_Absorptive			\Default Work Unit\Master Audio Bus\Mix\Reverbs\02_Absorptive	
+	1182670517	Mix			\Default Work Unit\Master Audio Bus\Mix	
+	1329847147	00_Reflective			\Default Work Unit\Master Audio Bus\Mix\Reverbs\00_Reflective	
+	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Mix\Reverbs	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	243379636	Reflect			\Default Work Unit\Master Audio Bus\Mix\Reflect	
+	509174529	absorptive_mid			\Default Work Unit\Master Audio Bus\Mix\Reverbs\02_Absorptive\absorptive_mid	
+	953810221	neutral_mid			\Default Work Unit\Master Audio Bus\Mix\Reverbs\01_Neutral\neutral_mid	
+	1519729833	reflective_mid			\Default Work Unit\Master Audio Bus\Mix\Reverbs\00_Reflective\reflective_mid	
+	1758685734	absorptive_large			\Default Work Unit\Master Audio Bus\Mix\Reverbs\02_Absorptive\absorptive_large	
+	2099598526	reflective_large			\Default Work Unit\Master Audio Bus\Mix\Reverbs\00_Reflective\reflective_large	
+	2306829414	neutral_small			\Default Work Unit\Master Audio Bus\Mix\Reverbs\01_Neutral\neutral_small	
+	2731948154	neutral_large			\Default Work Unit\Master Audio Bus\Mix\Reverbs\01_Neutral\neutral_large	
+	3905221058	absorptive_small			\Default Work Unit\Master Audio Bus\Mix\Reverbs\02_Absorptive\absorptive_small	
+	3956969242	reflective_small			\Default Work Unit\Master Audio Bus\Mix\Reverbs\00_Reflective\reflective_small	
+
+Effect plug-ins	ID	Name	Type				Notes
+	342980897	l_reflective	Wwise Convolution Reverb			
+	418265525	Gentle_Program_Compressor_Minus_14dB_RMS	Wwise Compressor			
+	497447198	m_neutral	Wwise Convolution Reverb			
+	766417452	s_neutral	Wwise Convolution Reverb			
+	909237999	Meter (Custom)	Wwise Meter			
+	1060327908	s_reflective	Wwise Convolution Reverb			
+	1444801802	m_absorptive	Wwise Convolution Reverb			
+	1790994751	l_neutral	Wwise Convolution Reverb			
+	1832490410	m_reflective	Wwise Convolution Reverb			
+	3311290121	l_absorptive	Wwise Convolution Reverb			
+	3399505373	Reflect_Physically_Based	Wwise Reflect			
+	4231306320	s_absorptive	Wwise Convolution Reverb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	16344899	Footsteps_Sneakers_Parquet_02 10 4	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\FF\{FF9C4077-99C5-90AF-96A0-6228391261AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete_Footsteps\Footsteps_Sneakers_Parquet_02 10 4		60424
+	25532641	Footsteps_Sneakers_Parquet_02 10	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\CF\{CF971A68-4AD9-4BAC-6D6C-ABD3201F14B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete_Footsteps\Footsteps_Sneakers_Parquet_02 10		153652
+	67503762	FOOTSTEPS_BOOTS_GRILL_METAL_STEP01	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\75\{75063A80-8FB9-3439-D8A8-468403EDD992}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal_Footsteps\FOOTSTEPS_BOOTS_GRILL_METAL_STEP01		56598
+	97031533	ReferenceVoice	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\49\{49AD45FA-DAF7-77EA-E0BD-27663275EFCF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ReferenceVoice		15170496
+	160228083	FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP04	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\41\{416FE9AC-5B67-34A2-B781-B2C958344FC6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand_Footsteps\FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP04		46350
+	168735040	Footsteps_Sneakers_Parquet_02 10 3	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\B2\{B2327D08-BCB5-9F54-F2C6-3525415269F2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete_Footsteps\Footsteps_Sneakers_Parquet_02 10 3		49512
+	267780510	Music_2	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\14\{1412E3B3-F839-DF0D-C5EC-833686A1BA4E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music_2		39183452
+	325842267	FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP06	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\E8\{E8CB670D-F6F5-C3B0-844E-924B108BABF8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand_Footsteps\FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP06		47656
+	333134978	Footsteps_Sneakers_Parquet_02 10 6	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\23\{23370811-AD89-3BEC-BABD-A02D306B4748}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete_Footsteps\Footsteps_Sneakers_Parquet_02 10 6		52080
+	478103330	Music	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\95\{955F51C6-8E2E-01D9-EB60-D14E481F4D9A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music		30178452
+	478818494	Footsteps_Sneakers_Parquet_02 10 1	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\72\{725CCD08-6CC3-858D-D702-F9BEB025980D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete_Footsteps\Footsteps_Sneakers_Parquet_02 10 1		61704
+	647071850	FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP02	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\9B\{9BFC821A-697A-3D9B-B399-42BF8B350840}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand_Footsteps\FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP02		47604
+	703145669	FOOTSTEPS_BOOTS_GRILL_METAL_STEP04	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\F3\{F38B0320-04F9-F723-40AD-F3578111DC2A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal_Footsteps\FOOTSTEPS_BOOTS_GRILL_METAL_STEP04		57108
+	756964054	medium-explosion	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\FE\{FE62C955-E267-4D1E-C381-7410D23B64AC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Grenade_Impact\medium-explosion		47112
+	779341220	Footsteps_Sneakers_Parquet_02 10 2	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\9F\{9F5BAACF-7FC0-EF8F-99F5-CA417EA6A482}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete_Footsteps\Footsteps_Sneakers_Parquet_02 10 2		60420
+	788570409	FOOTSTEPS_BOOTS_GRILL_METAL_STEP05	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\E0\{E0E9878C-5ECF-69B8-0C2D-507A2A8C3F0F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal_Footsteps\FOOTSTEPS_BOOTS_GRILL_METAL_STEP05		56096
+	795576910	Grenade	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\C2\{C22B0858-D5DA-1B9B-9361-7393A2669909}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot_Grenade\Grenade		225996
+	823741702	FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP03	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\CB\{CB57F7CC-B206-3B71-ABEA-93700C7F1181}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand_Footsteps\FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP03		48274
+	887844704	FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP07	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\03\{037C0A39-4277-EAB9-01F0-5FA2467C03AF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand_Footsteps\FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP07		47206
+	931971420	Footsteps_Sneakers_Parquet_02 10 5	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\C7\{C7143B5A-2502-C440-BC11-CB1D884F8BCE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete_Footsteps\Footsteps_Sneakers_Parquet_02 10 5		49512
+	973932234	FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP08	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\D8\{D886FE23-A1FB-A422-BC35-CA27903D9F68}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand_Footsteps\FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP08		46264
+	984898013	FOOTSTEPS_BOOTS_GRILL_METAL_STEP02	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\C8\{C8C08F48-1E30-CF5E-34E1-E8468F5994A9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal_Footsteps\FOOTSTEPS_BOOTS_GRILL_METAL_STEP02		57788
+	1023580497	FOOTSTEPS_BOOTS_GRILL_METAL_STEP03	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\46\{46A72FAC-1B1E-06B1-D169-C026C40A90D9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal_Footsteps\FOOTSTEPS_BOOTS_GRILL_METAL_STEP03		38306
+	1046036456	FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP05	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\3B\{3B99F696-52AD-090F-50C3-9F92F9B7D614}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand_Footsteps\FOOTSTEPS_BOOTS_GRAVEL_FINE_STEP05		47860
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	324571145	s_absorptive	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\42\{42005A3A-6686-8D79-1402-1DC340B9CB1F}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\small\s_absorptive		75904
+	544085050	s_neutral	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\C6\{C6B77626-04C1-EFB5-D085-8F7562C8DB6E}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\small\s_neutral		116736
+	564318137	l_reflective	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\FF\{FF411245-7A75-889F-7F5D-AE88D5A93E9B}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\large\l_reflective		745904
+	592219128	m_neutral	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\58\{587F7219-6E7C-3F87-F549-4320207DD4B1}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\medium\m_neutral		313040
+	661557773	s_reflective	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\C4\{C4FDFD37-8044-0CA6-9AB3-F4A7C1668E32}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\small\s_reflective		142096
+	667854762	l_neutral	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\BE\{BEAC0AC8-0CA9-C850-2CBA-2AC3D7FB6C4B}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\large\l_neutral		554224
+	695541056	l_absorptive	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\4A\{4AE2DC9B-2A38-0E7F-37DF-83075EA56E1A}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\large\l_absorptive		392992
+	725061990	m_absorptive	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\A6\{A68D3308-22C3-EC62-23BF-D6519FE638BA}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\medium\m_absorptive		184496
+	956130365	m_reflective	E:\dev\ExcitedWaves\ue\EWAcousticsDemo_TrialDev\EWAcousticsTrialDev\EWAcousticsDemo_WwiseProject\.cache\44\{44E382EC-6829-FB71-97CC-A9BD47C33683}.wem	Wwise Convolution Reverb (Shared)	\Effects\IR\medium\m_reflective		378464
+

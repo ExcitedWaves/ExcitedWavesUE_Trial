@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4140E148-8F6B-446F-8087-6324891FF143}" SchemaVersion="123">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{4140E148-8F6B-446F-8087-6324891FF143}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{74C35978-CF2B-4328-9699-9E1B7F7F7893}" WorkUnitID="{03C9D43F-1599-4F47-967E-7E4BCDDF22E8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Mix" ID="{B8F12FE3-FC18-47FE-96C2-3B662DB0527C}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>761524492</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Reverbs" ID="{9F14BC91-6021-4E38-BCEE-2E2EA1009CB2}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>12546</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="00_Reflective" ID="{AAB60D42-A252-4BD6-8CB7-157732159D8E}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ChildrenList>
+												<AuxBus Name="reflective_large" ID="{3B93B258-81B6-41FB-8672-D4544948A48F}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{75AB938B-B1F7-44FD-8142-325AC35A33B4}" ShortID="355733453">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="l_reflective" ID="{2D248024-56EA-4E60-8CC0-4F966C6F6B3B}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+												<AuxBus Name="reflective_mid" ID="{AE545866-DEAB-4EEF-B620-5F797B9AFABD}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{06368D95-A436-4CAF-ACB4-7D19478050BB}" ShortID="813693534">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="m_reflective" ID="{5CDAAE02-C293-41E2-AC39-BE67CE751FDC}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+												<AuxBus Name="reflective_small" ID="{24A7616D-0620-48B1-B6F7-125147843CF1}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<PositioningInfo>
+														<Position Name="" ID="{D58EBE0A-2D02-4C7F-B5DB-1972DAF38FC9}"/>
+													</PositioningInfo>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{E45A60FD-53EB-417A-B694-F8DCA53A7C79}" ShortID="667758846">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="s_reflective" ID="{8BE029B2-2CFB-4285-85E8-506424BFD5A0}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+											</ChildrenList>
+										</Bus>
+										<Bus Name="01_Neutral" ID="{34B9B68A-4608-4018-ABB8-3A6A83549801}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ChildrenList>
+												<AuxBus Name="neutral_large" ID="{CDE44A37-69E5-428A-B02B-290E6A0C7866}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{D170FB3B-AEB4-4538-AC88-8193928CCF96}" ShortID="249101347">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="l_neutral" ID="{595BFE60-1E41-4E06-932D-9E99F02E6435}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+												<AuxBus Name="neutral_mid" ID="{F072A459-5699-4DE1-9632-F097BDA76584}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{F78784BC-6144-4075-8743-932B0A78051B}" ShortID="557348229">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="m_neutral" ID="{61A7A1C2-6C3A-4F66-BF48-BD26EA1C7DFA}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+												<AuxBus Name="neutral_small" ID="{0DB0A552-949C-49E1-A2E5-7313F1B2BCA7}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<PositioningInfo>
+														<Position Name="" ID="{4B03086D-3932-4676-BD56-B7B021CAAB05}"/>
+													</PositioningInfo>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{59500DD9-594C-4E4C-A5C4-DAE4EAF9BC30}" ShortID="328908900">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="s_neutral" ID="{58D4DDBC-ED5F-4A40-AE80-DC10A81FC180}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+											</ChildrenList>
+										</Bus>
+										<Bus Name="02_Absorptive" ID="{D5F47F0F-B626-4236-822B-DD712541BA3A}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ChildrenList>
+												<AuxBus Name="absorptive_large" ID="{DC82FE54-20F7-47E8-97AD-808B0D4BD5F6}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{BB235F6C-8CC3-4673-9B33-350FBEE8B977}" ShortID="749882244">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="l_absorptive" ID="{BB014D7B-ED4C-4B38-ABE3-83825B1512EA}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+												<AuxBus Name="absorptive_mid" ID="{FA7155CE-A0E7-40D6-8217-ED9807FF1428}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{9A131A97-E5D6-48E9-BDF5-3D74CF1B052E}" ShortID="189598230">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="m_absorptive" ID="{10706104-3F04-4A65-A4D1-1E283E40C6A4}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+												<AuxBus Name="absorptive_small" ID="{685AAF9B-8650-496A-A8FD-0ECC46E62A53}">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_20" ID="{E6B8B9F3-1772-47F3-BB97-CCB4A08D5AB9}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+														</Reference>
+													</ReferenceList>
+													<PositioningInfo>
+														<Position Name="" ID="{C3469387-0C18-4511-A190-E31476387128}"/>
+													</PositioningInfo>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{2D46359E-D106-42FC-93D1-D11F36B364D0}" ShortID="206434090">
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																				<ObjectRef Name="s_absorptive" ID="{C1554FAB-4892-4097-93C6-CF5ACA6E471E}" WorkUnitID="{64287B90-CAA5-42E1-8654-F1A5DE12BBCF}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</AuxBus>
+											</ChildrenList>
+										</Bus>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{744F8BB7-D0F4-43B6-A71C-B7702656AF24}"/>
+									</PositioningInfo>
+								</Bus>
+								<AuxBus Name="Reflect" ID="{2EE54F1A-015A-4F13-8A92-C25498D916DC}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>768</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_120" ID="{465966D7-B081-4E06-BF12-B75BCB3BF551}" WorkUnitID="{5C21EEA8-FA03-48C6-AF87-DE0D54BAE12A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{B178F8E5-3B11-43A6-B9A5-1EC5BAAB9E49}" ShortID="963161212">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+																<ObjectRef Name="Reflect_Physically_Based" ID="{C69F5865-C206-4B45-BC40-315F3F39151A}" WorkUnitID="{9A5AAF13-8275-479B-8D44-4B723CE5B2F9}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{CA33B592-2E80-40BF-87F0-363148925CDF}" ShortID="594361207">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Meter (Custom)" ID="{B03415BF-76AF-4C0E-9D48-39C0DC461BC1}" ShortID="909237999" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{771FA9CF-8DBE-4C2D-A0C1-A2027DA979DA}" ShortID="619609790">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+												<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

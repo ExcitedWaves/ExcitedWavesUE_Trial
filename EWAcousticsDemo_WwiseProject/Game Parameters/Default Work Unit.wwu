@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7B0F9137-5DC8-49EE-B69A-28C532EA0513}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{7B0F9137-5DC8-49EE-B69A-28C532EA0513}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="EmitterVolume" ID="{C6C90512-6B6C-4842-B5D8-B83F4865674D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

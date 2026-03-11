@@ -1,0 +1,39 @@
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "1.0",
+    "FriendlyName": "Excited Waves Acoustics - Wwise Integration",
+    "Description": "Wwise audio middleware integration for Excited Waves Acoustics",
+    "Category": "Audio",
+    "CreatedBy": "Excited Waves",
+    "CreatedByURL": "",
+    "DocsURL": "",
+    "MarketplaceURL": "",
+    "SupportURL": "",
+    "CanContainContent": false,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": false,
+    "Installed": true,
+    "Modules": [
+        {
+            "Name": "ExcitedWavesAcousticsWwise",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "AdditionalDependencies": [
+                "Engine",
+                "AkAudio",
+                "ExcitedWavesAcoustics"
+            ]
+        }
+    ],
+    "Plugins": [
+        {
+            "Name": "ExcitedWavesAcoustics",
+            "Enabled": true
+        },
+        {
+            "Name": "Wwise",
+            "Enabled": true
+        }
+    ]
+}
