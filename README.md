@@ -8,24 +8,32 @@
 
 ---
 
-Excited Waves Acoustics replaces manual reverb zone authoring with automatic, runtime detection of acoustic environments. A single actor component continuously analyzes room geometry, material absorption, and indoor/outdoor transitions through raycasting – then feeds the results directly to your audio middleware.
+Excited Waves Acoustics is a runtime acoustics system for Unreal Engine. Every sound source gets its own acoustic properties automatically – the system uses frame-limited raycasting to evaluate surrounding geometry and drives reverb blending (Small/Medium/Large/Outdoor), absorption compensation, cross-room blending, and early reflections in real time.
 
-No reverb volumes. No trigger boxes. No re-authoring when level design changes. The system adapts to any geometry at runtime, including dynamically destroyed environments.
+No reverb volumes. No trigger boxes. No baking. No re-authoring when level design changes. Works out of the box with any geometry, including dynamically destroyed and procedurally generated environments.
 
 > **Trial Version.** All plugins in this repository are fully functional in Unreal Editor for evaluation and prototyping. Packaging a standalone game build requires a full license.
 > For licensing inquiries, contact us at **[contact@excitedwaves.com](mailto:contact@excitedwaves.com)**.
 
-## Plugins
+## Current Version
 
-The system consists of three independent plugins:
+- **Unreal Engine 5.6.1**, Windows (Win64)
+- **Audiokinetic Wwise 2024.1.11** – required for audio output in the current release
+
+The core detection engine is middleware-agnostic by design, but the current release only ships with a **Wwise audio adapter**. Wwise integration is effectively required for a working audio pipeline today.
+
+### Upcoming
+
+- **UE 5.7** support
+- **Native UE Audio + MetaSounds** adapter
+
+## Plugins
 
 | Plugin | Description |
 |--------|-------------|
 | [**Excited Waves Acoustics**](Plugins/ExcitedWavesAcoustics/README.md) | Core detection engine. Casts rays, analyzes the environment, produces continuous acoustic metrics (distance bins, absorption, enclosure, room dimensions). Middleware-agnostic. |
+| [**Excited Waves Acoustics – Wwise**](Plugins/ExcitedWavesAcousticsWwise/README.md) | Wwise audio adapter. Translates detection results into Wwise aux bus sends (reverb) and Wwise Reflect image sources (early reflections). Supports absorption-based preset selection with crossfading. **Required in the current release.** |
 | [**Excited Waves Acoustics – Chaos**](Plugins/ExcitedWavesAcousticsChaos/README.md) | Optional. Listens to Chaos destruction events and automatically triggers acoustic recalculation when geometry breaks. Zero setup required. |
-| [**Excited Waves Acoustics – Wwise**](Plugins/ExcitedWavesAcousticsWwise/README.md) | Optional. Translates detection results into Wwise aux bus sends (reverb) and Wwise Reflect image sources (early reflections). Supports absorption-based preset selection with crossfading. |
-
-The core plugin works standalone. The Chaos and Wwise plugins are optional extensions that depend on the core.
 
 ## What This Demo Shows
 
@@ -88,8 +96,6 @@ The demo level is pre-configured with acoustics detectors, Wwise integration, an
 5. For Wwise: set up reverb aux buses and configure presets in **Project Settings > Plugins > Excited Waves Acoustics Wwise Integration**.
 
 See each plugin's README for detailed configuration reference.
-
-> **Note:** The trial plugins are distributed as precompiled binaries (no C++ source code). Public headers are included for Blueprint and C++ API access. Source code is available with a full license.
 
 ## License
 

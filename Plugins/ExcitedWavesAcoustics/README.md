@@ -2,7 +2,7 @@
 
 **Runtime acoustic environment detection for Unreal Engine**
 
-Excited Waves Acoustics automatically detects room geometry, material absorption, and indoor/outdoor transitions at runtime using raycasting. It replaces manual reverb zone authoring with a single actor component that continuously adapts to any environment – including dynamically modified geometry.
+Excited Waves Acoustics gives every sound source its own acoustic properties at runtime using raycasting – room geometry, material absorption, and indoor/outdoor transitions are detected automatically. The system drives reverb blending (Small/Medium/Large/Outdoor), absorption compensation, cross-room blending, and early reflections with no manual setup, no baking, and no reverb zones. It continuously adapts to any environment, including dynamically destroyed and procedurally generated geometry.
 
 > **Trial Version.** This distribution is fully functional in Unreal Editor for evaluation and prototyping. Packaging a standalone game build requires a full license. For licensing inquiries, contact us at [contact@excitedwaves.com](mailto:contact@excitedwaves.com).
 
