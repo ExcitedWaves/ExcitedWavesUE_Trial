@@ -8,6 +8,8 @@
 
 ---
 
+[![Watch the demo](https://img.youtube.com/vi/ScII63fIz-c/maxresdefault.jpg)](https://www.youtube.com/watch?v=ScII63fIz-c)
+
 Excited Waves Acoustics is a runtime acoustics system for Unreal Engine. Every sound source gets its own acoustic properties automatically – the system uses frame-limited raycasting to evaluate surrounding geometry and drives reverb blending (Small/Medium/Large/Outdoor), absorption compensation, cross-room blending, and early reflections in real time.
 
 No reverb volumes. No trigger boxes. No baking. No re-authoring when level design changes. Works out of the box with any geometry, including dynamically destroyed and procedurally generated environments.
