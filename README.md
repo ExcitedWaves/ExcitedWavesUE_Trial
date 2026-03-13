@@ -54,11 +54,15 @@ This project is a playable Unreal Engine scene demonstrating the plugin suite in
 
 - **Unreal Engine 5.6.1** (installed via Epic Games Launcher)
 - **Wwise 2024.1.11** with UE integration (required for audio playback in this demo)
-- **Wwise Reflect** plugin (required for SoundBank regeneration – see below)
 
-### Wwise Reflect – Early Reflections
+### Wwise Plugin Dependencies
 
-This demo uses the **Wwise Reflect** plugin for early reflections. If you want to **regenerate SoundBanks** (e.g., after modifying the Wwise project), you will need a Wwise Reflect license. Obtain it here: [Audiokinetic – Register Project](https://www.audiokinetic.com/register-project/).
+If you want to **regenerate SoundBanks** (e.g., after modifying the Wwise project), the following Wwise plugins are required:
+
+- **Ak Reflect** – used for early reflections
+- **Ak Convolution Reverb** – used for reverb
+
+Obtain plugin licenses here: [Audiokinetic – Register Project](https://www.audiokinetic.com/register-project/).
 
 ### Running the Demo
 
@@ -68,36 +72,9 @@ This demo uses the **Wwise Reflect** plugin for early reflections. If you want t
 
 The demo level is pre-configured with acoustics detectors, Wwise integration, and destructible geometry. Walk around to hear the acoustic response change; destroy walls to observe real-time recalculation.
 
-### Controls
-
-| Key | Action |
-|-----|--------|
-| E | Grab Audio Emitter |
-| 0 | Toggle acoustics system |
-| 1 | Toggle debug text |
-| 2 | Toggle debug rays |
-| 3 | Toggle debug hit points |
-| 5 | Toggle listener attenuation |
-| 6 | Toggle cross-room blending |
-| 7 | Stop audio playback |
-| 8 | Play audio |
-| 9 | Next audio track |
-| M | Mute dry signal |
-| Tab | Switch ray scanning mode (Umbrella / Uniform) |
-| Shift+R | Restart level |
-
 ### Using the Plugins in Your Own Project
 
-1. Copy the desired plugin folders from `Plugins/` into your project's `Plugins/` directory:
-   - `ExcitedWavesAcoustics` – always required
-   - `ExcitedWavesAcousticsChaos` – if you use Chaos destruction
-   - `ExcitedWavesAcousticsWwise` – if you use Wwise
-2. Restart the Unreal Editor. The precompiled plugins will be loaded automatically – no build step required.
-3. Add a `UAcousticsDetectorComponent` to your player character or audio listener actor.
-4. Configure detection parameters in **Project Settings > Plugins > Excited Waves Acoustics**.
-5. For Wwise: set up reverb aux buses and configure presets in **Project Settings > Plugins > Excited Waves Acoustics Wwise Integration**.
-
-See each plugin's README for detailed configuration reference.
+Install the plugins from the [ExcitedWavesAcousticsUE_PluginTrial](https://github.com/ExcitedWaves/ExcitedWavesAcousticsUE_PluginTrial) repository. See its README for installation and configuration instructions.
 
 ## License
 
